@@ -1,0 +1,650 @@
+- action_distribution:
+    0: 0.0
+    1: 0.16339285714285715
+    2: 0.8366071428571429
+    3: 0.0
+    4: 0.0
+  cost_per_job_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - &id001 !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - false
+    - true
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    cLwQ6ShWuT8=
+  cost_per_job_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    Zki36O7auD8=
+  cost_per_job_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    CV+grkZHuD8=
+  cost_per_job_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    SGNn8KuwTj8=
+  episode_reward_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAADUhUA=
+  episode_reward_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    mpmZmZk0hUA=
+  episode_reward_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAAC0hEA=
+  episode_reward_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    nZr5w99CIEA=
+  n_episodes: 20
+  policy_name: DQN_Agent
+  total_cost_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAABwZEA=
+  total_cost_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAABwZEA=
+  total_cost_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAABwZEA=
+  total_cost_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAAAAAAA=
+  total_interruptions_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - &id002 !!python/object/apply:numpy.dtype
+    args:
+    - i8
+    - false
+    - true
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    AAAAAAAAAAA=
+  total_interruptions_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAAAAAAA=
+  total_interruptions_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    AAAAAAAAAAA=
+  total_interruptions_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAAAAAAA=
+  total_jobs_completed_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    vAYAAAAAAAA=
+  total_jobs_completed_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    mpmZmZlQmkA=
+  total_jobs_completed_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    dAYAAAAAAAA=
+  total_jobs_completed_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    nZr5w99CMEA=
+  total_sla_violations_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    AAAAAAAAAAA=
+  total_sla_violations_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAAAAAAA=
+  total_sla_violations_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    AAAAAAAAAAA=
+  total_sla_violations_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAAAAAAA=
+- action_distribution:
+    0: 0.968452380952381
+    1: 0.0
+    2: 0.030654761904761903
+    3: 0.0008928571428571428
+    4: 0.0
+  cost_per_job_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    mpmZmZmZqT8=
+  cost_per_job_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    m5mZmZmZqT8=
+  cost_per_job_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    mpmZmZmZqT8=
+  cost_per_job_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAAAAYDw=
+  episode_reward_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAABYh0A=
+  episode_reward_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    qJvEIDALh0A=
+  episode_reward_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    +Chcj8LthEA=
+  episode_reward_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    aiIvGMrBMEA=
+  n_episodes: 20
+  policy_name: AlwaysOnDemand
+  total_cost_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAADAVEA=
+  total_cost_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    mpmZmZmpVEA=
+  total_cost_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAACgVEA=
+  total_cost_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    1jCIjhdUzT8=
+  total_interruptions_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    AAAAAAAAAAA=
+  total_interruptions_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAAAAAAA=
+  total_interruptions_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    AAAAAAAAAAA=
+  total_interruptions_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAAAAAAA=
+  total_jobs_completed_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    fAYAAAAAAAA=
+  total_jobs_completed_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAADUmUA=
+  total_jobs_completed_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    cgYAAAAAAAA=
+  total_jobs_completed_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    hR4VuY5UEkA=
+  total_sla_violations_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    ggAAAAAAAAA=
+  total_sla_violations_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    zczMzMwMOkA=
+  total_sla_violations_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    AAAAAAAAAAA=
+  total_sla_violations_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    nZP5e0MLREA=
+- action_distribution:
+    0: 0.5648809523809524
+    1: 0.4351190476190476
+    2: 0.0
+    3: 0.0
+    4: 0.0
+  cost_per_job_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    ZAKtvy6lkT8=
+  cost_per_job_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    6DsyonJXkT8=
+  cost_per_job_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    MVKeFB/0kD8=
+  cost_per_job_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    2G3dJt/nJT8=
+  episode_reward_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    8ibDoJhkfEA=
+  episode_reward_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    SDShiNMQeEA=
+  episode_reward_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    WIJMJOHRdEA=
+  episode_reward_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    GqDH39CmPEA=
+  n_episodes: 20
+  policy_name: AlwaysSpot
+  total_cost_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    KlYeMoXYOUA=
+  total_cost_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    Hqc+LuYXOUA=
+  total_cost_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BGAjDaZAOEA=
+  total_cost_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    8APEbICQ3D8=
+  total_interruptions_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    TAAAAAAAAAA=
+  total_interruptions_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    MzMzMzMjUUA=
+  total_interruptions_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    OQAAAAAAAAA=
+  total_interruptions_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    mYloLAJlEkA=
+  total_jobs_completed_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    8AUAAAAAAAA=
+  total_jobs_completed_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    zczMzMwml0A=
+  total_jobs_completed_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    oAUAAAAAAAA=
+  total_jobs_completed_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    Pl/V84arM0A=
+  total_sla_violations_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    pAAAAAAAAAA=
+  total_sla_violations_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAABAY0A=
+  total_sla_violations_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    hAAAAAAAAAA=
+  total_sla_violations_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    Z2FLIM5FIEA=
+- action_distribution:
+    0: 0.8119047619047619
+    1: 0.1619047619047619
+    2: 0.02619047619047619
+    3: 0.0
+    4: 0.0
+  cost_per_job_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    mnwFyHEppj8=
+  cost_per_job_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    +EkbFjQWoz8=
+  cost_per_job_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    oEJ3ePnEmT8=
+  cost_per_job_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    OONzwSQ2cj8=
+  episode_reward_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    OysEqFOthEA=
+  episode_reward_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    /cEEaOXXgEA=
+  episode_reward_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    j4TjDBA1ekA=
+  episode_reward_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    wFbrcvdXUUA=
+  n_episodes: 20
+  policy_name: ThresholdPolicy
+  total_cost_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    8lJiayl3UUA=
+  total_cost_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    tUybe1OrTUA=
+  total_cost_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    wNfCBgqhQ0A=
+  total_cost_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    s0WBTNdtHkA=
+  total_interruptions_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    MQAAAAAAAAA=
+  total_interruptions_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAADAOkA=
+  total_interruptions_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    DgAAAAAAAAA=
+  total_interruptions_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    zX//7v+SI0A=
+  total_jobs_completed_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    WAYAAAAAAAA=
+  total_jobs_completed_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    MzMzMzPXmEA=
+  total_jobs_completed_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    AgYAAAAAAAA=
+  total_jobs_completed_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    bhvzL73eNEA=
+  total_sla_violations_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    pAAAAAAAAAA=
+  total_sla_violations_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    zczMzMzkYkA=
+  total_sla_violations_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    bgAAAAAAAAA=
+  total_sla_violations_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    QUsbiKC3J0A=
+- action_distribution:
+    0: 0.9208333333333333
+    1: 0.04702380952380952
+    2: 0.02976190476190476
+    3: 0.0
+    4: 0.002380952380952381
+  cost_per_job_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    7P1fjmJnqT8=
+  cost_per_job_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    VpGATH6Rpz8=
+  cost_per_job_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    OOyl1ee9pD8=
+  cost_per_job_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    FKcxVbr1YD8=
+  episode_reward_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    zcbUlbEBh0A=
+  episode_reward_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    VMpDP/AjhUA=
+  episode_reward_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    Om6ery21gkA=
+  episode_reward_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    uLnCxEKTREA=
+  n_episodes: 20
+  policy_name: SmartThresholdPolicy
+  total_cost_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    WraJ/1QrVEA=
+  total_cost_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    +G/XLtrLUkA=
+  total_cost_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    bhmq+nlTUEA=
+  total_cost_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    2Bmc6qEODEA=
+  total_interruptions_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    EQAAAAAAAAA=
+  total_interruptions_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    MzMzMzMzIEA=
+  total_interruptions_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    BAAAAAAAAAA=
+  total_interruptions_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    s66b46wIB0A=
+  total_jobs_completed_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    agYAAAAAAAA=
+  total_jobs_completed_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    zczMzMyEmUA=
+  total_jobs_completed_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    TAYAAAAAAAA=
+  total_jobs_completed_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    XtcTXkvCG0A=
+  total_sla_violations_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    owAAAAAAAAA=
+  total_sla_violations_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    MzMzMzODW0A=
+  total_sla_violations_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    AAAAAAAAAAA=
+  total_sla_violations_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    gWwqsQlISkA=
+- action_distribution:
+    0: 0.20952380952380953
+    1: 0.19345238095238096
+    2: 0.20208333333333334
+    3: 0.1949404761904762
+    4: 0.2
+  cost_per_job_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    rXrZXbcdsD8=
+  cost_per_job_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    Msj3fZP1pD8=
+  cost_per_job_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    pWMeF3wQnT8=
+  cost_per_job_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    u60+5jgIgT8=
+  episode_reward_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    nOdUT66LhUA=
+  episode_reward_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    IU9R0FdKgUA=
+  episode_reward_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    6C+MFLBNYEA=
+  episode_reward_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    a4UkQbVDYUA=
+  n_episodes: 20
+  policy_name: RandomPolicy
+  total_cost_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    eIe1SgXKVkA=
+  total_cost_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    mipFX75JT0A=
+  total_cost_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    BAaKrTcxOEA=
+  total_cost_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    6wi7vLJXMUA=
+  total_interruptions_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    UQAAAAAAAAA=
+  total_interruptions_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    ZmZmZmbGS0A=
+  total_interruptions_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    GQAAAAAAAAA=
+  total_interruptions_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    gKeamCYcLUA=
+  total_jobs_completed_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    oAYAAAAAAAA=
+  total_jobs_completed_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAACWl0A=
+  total_jobs_completed_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    IgMAAAAAAAA=
+  total_jobs_completed_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    +oCnYOzuakA=
+  total_sla_violations_max: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    ogAAAAAAAAA=
+  total_sla_violations_mean: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAABATkA=
+  total_sla_violations_min: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id002
+  - !!binary |
+    EAAAAAAAAAA=
+  total_sla_violations_std: !!python/object/apply:numpy._core.multiarray.scalar
+  - *id001
+  - !!binary |
+    KpuV1S07RUA=
