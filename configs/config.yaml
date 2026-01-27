@@ -1,0 +1,142 @@
+# =============================================================================
+# Cấu hình cho Spot Instance Bidding Strategy using Reinforcement Learning
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Tham số môi trường (Environment Parameters)
+# -----------------------------------------------------------------------------
+environment:
+  # Giá instance
+  on_demand_price: 0.10          # Giá on-demand instance ($/hour)
+  spot_price_base: 0.03          # Giá spot cơ bản ($/hour)
+  spot_price_max: 0.08           # Giá spot tối đa ($/hour)
+
+  # Giới hạn instances
+  max_instances: 10              # Số instance tối đa có thể chạy
+  max_pending_jobs: 100          # Số jobs tối đa trong queue
+
+  # Hiệu suất xử lý
+  jobs_per_instance_per_step: 2  # Số jobs mỗi instance xử lý trong 1 step
+
+  # Xác suất interruption
+  base_interruption_prob: 0.05   # Xác suất bị terminate cơ bản
+  high_price_interruption_prob: 0.15  # Xác suất khi giá cao
+
+  # Thời gian mô phỏng
+  episode_length: 168            # Số steps mỗi episode (168 = 1 tuần theo giờ)
+
+  # Checkpointing
+  checkpoint_cost: 0.01          # Chi phí checkpoint ($/lần)
+  checkpoint_recovery_rate: 0.8  # Tỷ lệ recovery sau checkpoint
+
+# -----------------------------------------------------------------------------
+# Tham số reward function
+# R = -α(cost) + β(jobs_completed) - γ(interruption_penalty) - δ(sla_violation)
+# -----------------------------------------------------------------------------
+reward:
+  alpha: 1.0                     # Hệ số phạt chi phí
+  beta: 0.5                      # Hệ số thưởng hoàn thành job
+  gamma: 2.0                     # Hệ số phạt interruption
+  delta: 1.5                     # Hệ số phạt vi phạm SLA
+
+  # Ngưỡng SLA
+  sla_max_pending_jobs: 50       # Ngưỡng jobs tối đa cho SLA
+  sla_max_wait_time: 5           # Thời gian chờ tối đa (steps)
+
+# -----------------------------------------------------------------------------
+# Tham số DQN (Deep Q-Network)
+# -----------------------------------------------------------------------------
+dqn:
+  # Kiến trúc mạng
+  policy: "MlpPolicy"
+  net_arch: [128, 128]           # 2 hidden layers, mỗi layer 128 neurons
+
+  # Hyperparameters
+  learning_rate: 0.0001          # Tốc độ học
+  buffer_size: 100000            # Kích thước replay buffer
+  learning_starts: 1000          # Số steps trước khi bắt đầu học
+  batch_size: 64                 # Kích thước batch
+  tau: 0.005                     # Soft update coefficient
+  gamma: 0.99                    # Discount factor
+
+  # Exploration
+  exploration_fraction: 0.2      # Phần trăm training dành cho exploration
+  exploration_initial_eps: 1.0   # Epsilon ban đầu
+  exploration_final_eps: 0.05    # Epsilon cuối cùng
+
+  # Target network
+  target_update_interval: 500    # Cập nhật target network mỗi N steps
+
+  # Gradient clipping
+  max_grad_norm: 10              # Giới hạn gradient
+
+# -----------------------------------------------------------------------------
+# Tham số training
+# -----------------------------------------------------------------------------
+training:
+  total_timesteps: 100000        # Tổng số timesteps training
+  eval_freq: 5000                # Đánh giá mỗi N timesteps
+  n_eval_episodes: 10            # Số episodes để đánh giá
+
+  # Logging
+  log_interval: 100              # Log mỗi N episodes
+  verbose: 1                     # Mức độ verbose (0, 1, 2)
+
+  # Checkpointing
+  save_freq: 10000               # Lưu model mỗi N timesteps
+
+  # TensorBoard
+  tensorboard_log: "./logs/tensorboard/"
+
+  # Random seed
+  seed: 42
+
+# -----------------------------------------------------------------------------
+# Tham số evaluation
+# -----------------------------------------------------------------------------
+evaluation:
+  n_episodes: 100                # Số episodes để evaluate
+  deterministic: true            # Sử dụng policy deterministic
+
+  # Đường dẫn
+  results_dir: "./results/"
+  plots_dir: "./results/plots/"
+
+# -----------------------------------------------------------------------------
+# Tham số data generation
+# -----------------------------------------------------------------------------
+data_generation:
+  # Spot price patterns
+  daily_amplitude: 0.02          # Biên độ dao động theo ngày
+  weekly_amplitude: 0.01         # Biên độ dao động theo tuần
+  noise_std: 0.005               # Độ lệch chuẩn nhiễu
+
+  # Workload patterns
+  workload_types:
+    - stable                     # Workload ổn định
+    - spike                      # Workload có spike
+    - random                     # Workload ngẫu nhiên
+    - periodic                   # Workload theo chu kỳ
+
+  base_workload: 10              # Workload cơ bản (jobs/step)
+  spike_multiplier: 5            # Hệ số nhân khi spike
+  spike_probability: 0.1         # Xác suất spike
+
+# -----------------------------------------------------------------------------
+# Tham số baselines
+# -----------------------------------------------------------------------------
+baselines:
+  threshold_policy:
+    spot_price_threshold: 0.05   # Ngưỡng giá để chọn spot
+
+  random_policy:
+    seed: 42
+
+# -----------------------------------------------------------------------------
+# Đường dẫn files
+# -----------------------------------------------------------------------------
+paths:
+  models_dir: "./models/"
+  data_dir: "./data/"
+  logs_dir: "./logs/"
+  best_model: "./models/best_model.zip"
